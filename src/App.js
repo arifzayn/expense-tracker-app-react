@@ -1,22 +1,25 @@
 import React from "react";
-import logo from "./logo.svg";
+// import logo from "./logo.svg";
 import "./App.css";
+import Header from "./components/Header";
+import Balance from "./components/Balance";
+import AccountSummary from "./components/AccountSummary";
+import TransactionHistory from "./components/TransactionHistory";
+import AddTransaction from "./components/AddTransaction";
+
+import { GlobalProvider } from "./context/GlobalState";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <a
-          className="App-link"
-          href="https://twitter.com/zayn_css"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Arif Zain Twitter
-        </a>
-      </header>
-    </div>
+    <GlobalProvider>
+      <Header />
+      <div className="container">
+        <Balance />
+        <AccountSummary />
+        <TransactionHistory />
+        <AddTransaction />
+      </div>
+    </GlobalProvider>
   );
 }
 
