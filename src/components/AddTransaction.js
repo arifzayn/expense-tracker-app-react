@@ -28,7 +28,7 @@ export default function AddTransaction() {
             type="text"
             id="description"
             placeholder="Detail of Transaction"
-            value={description}
+            value={description || ""}
             onChange={(e) => setDescription(e.target.value)}
           />
         </div>
@@ -38,7 +38,7 @@ export default function AddTransaction() {
             type="number"
             id="transactionamount"
             placeholder="Enter transaction amount"
-            value={transactionAmount}
+            value={transactionAmount || ""}
             onChange={(e) => setTransactionAmount(e.target.value)}
           />
         </div>

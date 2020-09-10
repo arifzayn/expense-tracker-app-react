@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap");
 
-:root {
+root {
   --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
@@ -9,7 +9,7 @@
 }
 
 body {
-  background-color: #f7f7f7;
+  background-color: #fbf8fd;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,14 +19,51 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:active {
+  text-decoration: none;
+  color: purple;
+}
+
 .container {
-  margin: 30px auto;
+  margin: 5px auto;
+  border-radius: 25px;
+  border: 2px solid #d6b9ec;
+  background-color: #f0e6ef;
+  padding: 25px 25px 25px 25px;
   width: 350px;
 }
 
 h1 {
   letter-spacing: 1px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+p.min {
+  font-size: 30px;
+  font-weight: bold;
+  color: #d90429;
   margin: 0;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+p.pl {
+  font-size: 30px;
+  font-weight: bold;
+  color: #29834f;
+  margin: 0;
+  letter-spacing: 1px;
   text-align: center;
 }
 
@@ -37,7 +74,7 @@ h2 {
 }
 
 h3 {
-  border-bottom: 1px solid #bbb;
+  border-bottom: 1px solid #d6b9ec;
   padding-bottom: 10px;
   margin: 40px 0 10px;
   text-align: center;
@@ -54,6 +91,7 @@ h4 {
   box-shadow: var(--box-shadow);
   padding: 20px;
   display: flex;
+  border-radius: 50px;
   justify-content: space-between;
   margin: 20px 0;
 }
@@ -64,7 +102,7 @@ h4 {
 }
 
 .inc-exp-container > div:first-of-type {
-  border-right: 1px solid #dedede;
+  border-right: 1px solid purple;
 }
 
 .money {
@@ -79,14 +117,13 @@ h4 {
 }
 
 .money.minus {
-  color: #7a261d;
+  color: #d90429;
   font-weight: bold;
 }
 
 label {
   display: inline-block;
   margin: 10px 0;
-  font-weight: bold;
 }
 
 input[type="text"],
@@ -101,16 +138,16 @@ input[type="number"] {
 
 .btn {
   cursor: pointer;
-  background-color: #3457ae;
+  background-color: #a982ff;
   box-shadow: var(--box-shadow);
   color: #fff;
   border: 0;
+  border-radius: 50px;
   display: block;
   font-size: 16px;
-  margin: 10px 0 30px;
+  margin: 20px 0 0px;
   padding: 10px;
   width: 100%;
-  font-weight: bold;
 }
 
 .btn:focus,
@@ -146,18 +183,18 @@ input[type="number"] {
 }
 
 .list li.minus {
-  border-right: 5px solid #7a261d;
+  border-right: 5px solid #d90429;
 }
 
 .list li.minus:hover {
   border-right: 5px solid #7a261d;
-  background-color: #7a261d;
+  background-color: #d90429;
   color: #f7f7f7;
 }
 
 .delete-btn {
   cursor: pointer;
-  background-color: #7a261d;
+  background-color: black;
   border: 0;
   color: #fff;
   font-size: 20px;

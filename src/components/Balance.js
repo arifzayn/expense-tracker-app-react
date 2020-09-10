@@ -13,7 +13,7 @@ export default function Balance() {
   return (
     <>
       <h4>Current Balance</h4>
-      <h1>${total}</h1>
+      <p className={total > 0 ? "pl" : "min"}>${total}</p>
     </>
   );
 }
